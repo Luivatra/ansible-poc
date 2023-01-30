@@ -1,0 +1,19 @@
+- name: Install and run paideia-offchain services
+  hosts: paideia-offchain
+  remote_user: root
+
+  tasks:
+  - name: paideia offchain bots
+    ansible.builtin.import_playbook: paideia-offchain-template.yml
+    vars:
+      project: im.paideia
+
+  - name: anetabtc offchain bots
+    ansible.builtin.import_playbook: paideia-offchain-template.yml
+    vars:
+      project: io.anetabtc
+
+  - name: ergogames offchain bots
+    ansible.builtin.import_playbook: paideia-offchain-template.yml
+    vars:
+      project: io.ergogames
