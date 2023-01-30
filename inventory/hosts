@@ -1,4 +1,4 @@
 all:
   paideia:
     paideia-offchain:
-      my.paideiaserver.com:
+      localhost:
