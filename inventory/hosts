@@ -1,4 +1,0 @@
-all:
-  paideia:
-    paideia-offchain:
-      localhost:

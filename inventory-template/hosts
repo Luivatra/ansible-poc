@@ -2,6 +2,6 @@ all:
   children:
     paideia:
       children:
-        paideia-offchain:
+        paideia_offchain:
           hosts:
-            localhost:
+            myserver:
