@@ -1,4 +1,7 @@
 all:
-  paideia:
-    paideia-offchain:
-      localhost:
+  children:
+    paideia:
+      children:
+        paideia-offchain:
+          hosts:
+            localhost:
